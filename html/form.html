@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Survey Form</h2>
+    <p>Please fill out this survey form.</p>
+    <form id="surveyForm" action="#" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name.." required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Your age.." required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label>Interests:</label>
+        <div>
+            <input type="checkbox" id="interest1" name="interest1">
+            <label for="interest1">Interest 1</label>
+        </div>
+        <div>
+            <input type="checkbox" id="interest2" name="interest2">
+            <label for="interest2">Interest 2</label>
+        </div>
+        <div>
+            <input type="checkbox" id="interest3" name="interest3">
+            <label for="interest3">Interest 3</label>
+        </div>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Your feedback.." required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
